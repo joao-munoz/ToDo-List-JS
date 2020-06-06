@@ -61,12 +61,12 @@ document.addEventListener("keyup",function(event){
                     name: toDo,
                     id: id,
                     done: false,
-                    trash: false,
+                    trash: false
                 }
             );
+            id ++;
         }
         input.value="";
-        id ++;
     }
 });
 
@@ -100,15 +100,17 @@ function addToDo(toDo, id, done, trash){
 
 function completeToDo(element){
 
-    element.classList.toggle(CHECK)
-    element.classList.toggle(UNCHECK)
-    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH)
-    LIST[element.id].done = LIST[element.id].done ? false : true
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+    
+    LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 
 
 //6- Removendo uma ToDo
-function removeToDo(elemente){
+function removeToDo(element){
     element.parentNode.parentNode.removeChild(element.parentNode);
+    
     LIST[element.id].trash = true;
 }
