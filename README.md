@@ -1,4 +1,4 @@
 # ToDo List JS
  First project wifh JS
 
-To pratice and learn JS, I decide to follow a project on Youtube and create a ToDo list.
+To practice and learn JS, I decided to follow a project on Youtube and create a to-do list.
