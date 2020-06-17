@@ -18,7 +18,7 @@ body{
     width: 380px;
     height:200px;
     background-image: url('../img/bg2.jpg');
-    background-size: 100% 200%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
@@ -27,7 +27,7 @@ body{
     width : 30px;
     height: 30px;
     position: absolute;
-    right:20px;
+    left: 325px;
     top: 20px;
 }
 .clear i{
